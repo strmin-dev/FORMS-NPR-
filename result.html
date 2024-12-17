@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="styleee.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+            <title>Form Result</title>
+        </head>
+    <body>
+        <h1>CONTACT US</h1>
+            <p>For your inquiries</p>
+
+                <div class="contact-box">
+                    <div class="contactleft">
+                        <h2>Form Submitted Successfully!</h2>
+                        <p><strong>Name:</strong> <span id="resultName"></span></p>
+                        <p><strong>Email:</strong> <span id="resultEmail"></span></p>
+                        <p><strong>Phone:</strong> <span id="resultPhone"></span></p>
+                        <p><strong>Subject:</strong> <span id="resultSubject"></span></p>
+                        <p><strong>Message:</strong> <span id="resultMessage"></span></p>
+                        <button type="button" onclick="window.location.href='index.html';">Submit New</button>
+                    </div>
+                 
+
+                    <div class="contactright">
+                        <h3>Reach Us</h3>
+                        <table>
+                            <tr>
+                                <td>Email</td>
+                                <td>shielaatienza9@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Facebook</td>
+                                <td>Shiela Atienza</td>
+                            </tr>
+                            <tr>
+                                <td>Instagram</td>
+                                <td>@shixluh</td>
+                            </tr>
+                            <tr>
+                                <td>Phone</td>
+                                <td>+63 9569645268</td>
+                            </tr>
+                        </table>
+                        <div class="icons">
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBxxrtpVTsNVhXklNLskmfpWQQnXnxXZPrpBphXrdvQdWLNsrQWDKWhRNdbgpxJmWfrDWN"><i class="fa-brands fa-google"></i></a>
+                            <a href="https://www.facebook.com/shielamae.atienza27"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/shixluh/profilecard/?igsh=bnlvYzM1bXdzcHJ6"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+    <script>
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        document.getElementById('resultName').innerText = getQueryParam('name');
+        document.getElementById('resultEmail').innerText = getQueryParam('email');
+        document.getElementById('resultPhone').innerText = getQueryParam('number');
+        document.getElementById('resultSubject').innerText = getQueryParam('subject');
+        document.getElementById('resultMessage').innerText = getQueryParam('message');
+    </script>
+
+    <footer>
+        <p> &copy; 2024 Shiela Mae Atienza DCPET 1-2 </p>
+    </footer>
+    </body>
+    </html>

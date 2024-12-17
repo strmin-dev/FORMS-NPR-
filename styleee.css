@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #fffdd0;
+}
+
+h1{
+    margin-left: 35px;
+    padding: 10px;
+    color: rgb(0, 0, 128);
+}
+
+p{
+    margin-left: 35px;
+    padding: 10px;
+    padding-bottom: 20px;
+    color: #000080;
+}
+
+.contact-box {
+    background: #fffdd0;
+    box-shadow: 2px 2px 20px black;
+    display: flex;
+    border-radius: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.contactleft {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contactright {
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: hsl(240, 100%, 25%);
+    color: #fffdd0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+button{
+    background: navy;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fffdd0;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px navy;
+}
+
+.contactleft h2{
+    color: hsl(240, 100%, 25%);
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.contactleft p{
+    margin-left: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.contactright h3{
+    color: #fffdd0;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+
+tr td:first-child{
+    padding-right: 20px;
+}
+
+tr td{
+    padding-top: 20px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.icons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fffdd0;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.icons a i{
+    font-size: 2rem;
+    color: navy(0, 100%, 25%);
+    opacity: 0.9;
+}
+
+.icons a:hover{
+    background-color: navy;
+    transition: 0.5s;
+}
+
+.icons a:hover i{
+    color: #fffdd0;
+    transition: 0.5s;
+}
+
+footer{
+    padding-top: 20px;
+    text-align: center;
+}
